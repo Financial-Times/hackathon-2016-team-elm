@@ -1,64 +1,65 @@
-{
-	"people": [
-		{
-			"born": "1967",
-			"education": "B.A. in Political Science in 1989 from Trinity College, Washington, D.C",
-			"name": "Kellyanne Elizabeth Conway",
-			"news": [
-				{
-					"title": "US-Cuba detente looks uncertain under Trump presidency",
-					"url": "https://www.ft.com/content/9ab836d0-b4c2-11e6-ba85-95d1533d9a62"
-				},
-				{
-					"title": "Republicans at odds over prospect of Romney as secretary of state",
-					"url": "https://www.ft.com/content/71190d36-b2e7-11e6-a37c-f4a01f1b0fa1"
-				}
-			],
-			"topics": "US Election, GOP, Trump",
-			"previous": "Worked for Congressman Jack Kemp; Senator Fred Thompson; former Vice President Dan Quayle; Speaker of the House Newt Gingrich; Congressman (now Indiana Governor and Vice President-elect) Mike Pence.",
-			"authored": "What Women Really Want: How American Women Are Quietly Erasing Political, Racial, Class, and Religious Lines to Change the Way We Live in 2005, with Celinda Lake",
-			"recent": "Campaign manager - for Republican Donald Trump's presidential campaign (third appointed in August 2016). Credited with major role in transforming Trump's campaign and for appealing to female voters",
-			"net_worth": "N/A"
-		},
-		{
-			"born": "1950",
-			"education": "Graduated magna cum laude from Harvard College (1973), studied psychology, sociology & anthropology. Attended Harvard Medical School and graduated in 1979.",
-			"name": "Jill Ellen Stein",
-			"news": [
-				{
-					"title": "White House Countdown – Young and restless",
-					"url": "https://www.ft.com/content/0e85ba4f-263b-3d0a-985e-1a3d76e309a8"
-				},
-				{
-					"title": "White House Countdown – Pulse check",
-					"url": "https://www.ft.com/content/9e06505c-bf63-30ab-9d9f-39f8ab968d35"
-				}
-			],
-			"topics": "US election 2016, World, Green Party",
-			"previous": "Ran for governor of Massachusetts in 2002 and 2010. Medical doctor & activist primarily concerned about the connection between people's health and the quality of their local environment. Served on the board of the Greater Boston chapter of Physicians for Social Responsibility (since 1998).  Co-founded and served as Executive Director of the Massachusetts Coalition for Healthy Communities (2003).",
-			"authored": "Reports by the Greater Boston Physicians for Social Responsibility, In Harm's Way: Toxic Threats to Child Development (2000), and Environmental Threats to Healthy Aging (2009)",
-			"recent": "Green Party's nominee for President of the United States in the 2012 and 2016 elections. Filed for a recount of 2016 presidential election results on 25th November. Running mate -human rights activist Ajamu Baraka.",
-			"net_worth": "$8.5 million"
-		},
-		{
-			"born": "1971",
-			"education": "J.D. degree cum laude from the University of Miami School of Law in 1996. University of Florida (BA in 1993). Tarkio College (football scholarship from 1989 to 1990). Then Santa Fe College, Gainesville, Florida.",
-			"name": "Marco Rubio",
-			"news": [
-				{
-					"title": "Republicans defy predictions and keep control of Congress",
-					"url": "https://www.ft.com/content/55920ca2-a630-11e6-8b69-02899e8bd9d1"
-				},
-				{
-					"title": "Treasury’s Lew: Puerto Rico health funding urgent",
-					"url": "https://www.ft.com/content/1e88ca0f-1ac9-3348-bbfc-8d4548de551e"
-				}
-			],
-			"topics": "US election 2016, Ted Cruz, Republican Party",
-			"previous": "American politician and attorney, and the junior United States Senator from Florida. First Cuban American to serve as Speaker of the Florida House of Representatives (November 21, 2006 – November 18, 2008). Successfully ran for United States Senate in 2010. Served as a City Commissioner for West Miami, elected to the Florida House of Representatives in 2000.",
-			"authored": "Published - 100 Innovative Ideas For Florida’s Future (2006)",
-			"recent": "Ran for President in 2016 election (announced April 13, 2015). In first Republican primary (February Iowa caucuses), Rubio finished third, behind candidates Ted Cruz and Donald Trump. Suspended his campaign on March 15 after placing second in home state of Florida.",
-			"net_worth": "N/A"
-		}
-	]
-}
+[
+	{
+		"type": "person",
+		"born": "1967",
+		"education": "B.A. in Political Science in 1989 from Trinity College, Washington, D.C",
+		"name": "Kellyanne Elizabeth Conway",
+		"news": [
+			{
+				"title": "US-Cuba detente looks uncertain under Trump presidency",
+				"url": "https://www.ft.com/content/9ab836d0-b4c2-11e6-ba85-95d1533d9a62"
+			},
+			{
+				"title": "Republicans at odds over prospect of Romney as secretary of state",
+				"url": "https://www.ft.com/content/71190d36-b2e7-11e6-a37c-f4a01f1b0fa1"
+			}
+		],
+		"topics": "US Election, GOP, Trump",
+		"previous": "Worked for Congressman Jack Kemp; Senator Fred Thompson; former Vice President Dan Quayle; Speaker of the House Newt Gingrich; Congressman (now Indiana Governor and Vice President-elect) Mike Pence.",
+		"authored": "What Women Really Want: How American Women Are Quietly Erasing Political, Racial, Class, and Religious Lines to Change the Way We Live in 2005, with Celinda Lake",
+		"recent": "Campaign manager - for Republican Donald Trump's presidential campaign (third appointed in August 2016). Credited with major role in transforming Trump's campaign and for appealing to female voters",
+		"net_worth": "N/A"
+	},
+	{
+		"type": "person",
+		"born": "1950",
+		"education": "Graduated magna cum laude from Harvard College (1973), studied psychology, sociology & anthropology. Attended Harvard Medical School and graduated in 1979.",
+		"name": "Jill Ellen Stein",
+		"news": [
+			{
+				"title": "White House Countdown – Young and restless",
+				"url": "https://www.ft.com/content/0e85ba4f-263b-3d0a-985e-1a3d76e309a8"
+			},
+			{
+				"title": "White House Countdown – Pulse check",
+				"url": "https://www.ft.com/content/9e06505c-bf63-30ab-9d9f-39f8ab968d35"
+			}
+		],
+		"topics": "US election 2016, World, Green Party",
+		"previous": "Ran for governor of Massachusetts in 2002 and 2010. Medical doctor & activist primarily concerned about the connection between people's health and the quality of their local environment. Served on the board of the Greater Boston chapter of Physicians for Social Responsibility (since 1998).  Co-founded and served as Executive Director of the Massachusetts Coalition for Healthy Communities (2003).",
+		"authored": "Reports by the Greater Boston Physicians for Social Responsibility, In Harm's Way: Toxic Threats to Child Development (2000), and Environmental Threats to Healthy Aging (2009)",
+		"recent": "Green Party's nominee for President of the United States in the 2012 and 2016 elections. Filed for a recount of 2016 presidential election results on 25th November. Running mate -human rights activist Ajamu Baraka.",
+		"net_worth": "$8.5 million"
+	},
+	{
+		"type": "person",
+		"born": "1971",
+		"education": "J.D. degree cum laude from the University of Miami School of Law in 1996. University of Florida (BA in 1993). Tarkio College (football scholarship from 1989 to 1990). Then Santa Fe College, Gainesville, Florida.",
+		"name": "Marco Rubio",
+		"news": [
+			{
+				"title": "Republicans defy predictions and keep control of Congress",
+				"url": "https://www.ft.com/content/55920ca2-a630-11e6-8b69-02899e8bd9d1"
+			},
+			{
+				"title": "Treasury’s Lew: Puerto Rico health funding urgent",
+				"url": "https://www.ft.com/content/1e88ca0f-1ac9-3348-bbfc-8d4548de551e"
+			}
+		],
+		"topics": "US election 2016, Ted Cruz, Republican Party",
+		"previous": "American politician and attorney, and the junior United States Senator from Florida. First Cuban American to serve as Speaker of the Florida House of Representatives (November 21, 2006 – November 18, 2008). Successfully ran for United States Senate in 2010. Served as a City Commissioner for West Miami, elected to the Florida House of Representatives in 2000.",
+		"authored": "Published - 100 Innovative Ideas For Florida’s Future (2006)",
+		"recent": "Ran for President in 2016 election (announced April 13, 2015). In first Republican primary (February Iowa caucuses), Rubio finished third, behind candidates Ted Cruz and Donald Trump. Suspended his campaign on March 15 after placing second in home state of Florida.",
+		"net_worth": "N/A"
+	}
+]

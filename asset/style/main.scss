@@ -1,0 +1,53 @@
+---
+---
+@charset "UTF-8";
+
+// Make everything pink
+body {
+	background-color: #fff1e0;
+}
+
+// Article styles (mostly copied from next)
+// ========================================
+
+// Header
+.article__header {
+	padding: 12px 0;
+}
+
+// Primary theme
+.article__primary-theme {
+	margin: 0 0 5px 0;
+	color: #9e2f50;
+	font-family: MetricWeb, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+// Headline
+.article-headline {
+	font-family: FinancierDisplayWeb, serif;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 31px;
+	margin: 0;
+}
+@media (min-width: 61.25em) {
+	.article-headline {
+		font-size: 40px;
+		line-height: 40px;
+	}
+}
+
+// Typography
+.article {
+	font: 18px/1.4 Georgia,serif;
+	margin-bottom: 40px;
+}
+.article p {
+	margin: .3em 0 .8em 0;
+}

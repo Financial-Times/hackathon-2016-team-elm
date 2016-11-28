@@ -63,6 +63,26 @@
 		"net_worth": "N/A"
 	},
 	{
+		"type": "person",
+		"age": "53",
+		"education": "Mr. Jiang graduated in Nanjing Institute of Architecture and Civil Engineering and was admitted to an Executive Master of Business.",
+		"name": "Jiang Zhaobai",
+		"news": [
+			{
+				"title": "China-led consortium in vast Australia farmland deal",
+				"url": "https://www.ft.com/content/62443272-0608-11e6-9b51-0fb5e65703ce"
+			},
+			{
+				"title": "The Great Land Rush: China’s Pengxin hits overseas hurdles",
+				"url": "https://www.ft.com/content/d9864062-ded7-11e5-b67f-a61732c1d025"
+			}
+		],
+		"topics": "China",
+		"previous": "Chairman and Executive Director at EverChina Int'l Holdings Company Limited (a/k/a, Interchina Holdings Company Limited) since September 24, 2012. Served as Chairman of Shanghai Pengxin Group Co., Ltd from April 1997 to May 2000 and the chairman of Pengxin Real Estate from January 1995 to March 1997. He serves as Vice President of China Non-Government Enterprise Directors Association and a rotating chairman of New Shanghai Businessman Federation.",
+		"recent": "Ranked #212 Forbes’ China rich list (2016). Chair & founder of Shanghai Pengxin Group and Shanghai Pengxin Real Estate Development Co., Ltd, whose businesses include, real estate, financial services and agribusiness.",
+		"net_worth": "$1.42 billion"
+	},
+	{
 		"type": "organisation",
 		"status": "Private Company",
 		"established": "1997",

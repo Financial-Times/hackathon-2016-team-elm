@@ -61,5 +61,48 @@
 		"authored": "Published - 100 Innovative Ideas For Florida’s Future (2006)",
 		"recent": "Ran for President in 2016 election (announced April 13, 2015). In first Republican primary (February Iowa caucuses), Rubio finished third, behind candidates Ted Cruz and Donald Trump. Suspended his campaign on March 15 after placing second in home state of Florida.",
 		"net_worth": "N/A"
+	},
+	{
+		"type": "organisation",
+		"status": "Private Company",
+		"established": "1997",
+		"based": "Shanghai, China",
+		"name": "Shanghai Pengxin Group Co., Ltd",
+		"executives": [
+			{
+				"role": "Founder",
+				"name": "Jiang Zhaobai"
+			},
+			{
+				"role": "President",
+				"url": "Lei Jiang"
+			}
+		],
+		"topics": "--",
+		"size": "11-50 employees",
+		"overview": "Private conglomerate with a diversified businesses involved in Real Estate Development, Agribusiness, Mining, Infrastructure Construction & Investment. Based in Shanghai, 40 subsidiaries worldwide (either wholly-owned or majority-controlled). As of 2010, its total assets reached over US$2 billion (over ten billion RMB)",
+		"activity": "Still the largest private landholder in Australia. The entire landholding was placed up for sale in 2015, eleven cattle stations with a total area of over 100,000 square kilometres (38,610 sq mi) with a herd of 155,000 cattle. Company value estimated to be A$360 million. Two Chinese companies, Genius Link Asset Management and Shanghai Pengxin, have expressed an interested in acquiring the company. Sale was blocked in 2015 by the Treasurer of Australia Scott Morrison, who cited the national interest clause in the Foreign Investment Act. In 2015, Kidman recorded $62 million in livestock sales reflecting an increase of 10.71% on the previous year."
+	},
+	{
+		"type": "organisation",
+		"status": "Private Company",
+		"established": "1899",
+		"based": "North Adelaide, Australia",
+		"name": "S. Kidman & Co Ltd",
+		"executives": [
+			{
+				"role": "Founder",
+				"name": "Sir Sidney Kidman (1857-1935)"
+			},
+			{
+				"role": "Managing Director",
+				"url": "Greg Campbell"
+			}
+		],
+		"topics": "--",
+		"size": "11-50 employees",
+		"overview": "One of Australia's largest beef producers with a herd of 185,000 cattle. Holds pastoral leases covering 103,000 square kilometres. Kidman cattle stations produce grass-fed beef for export to Japan, the USA and South East Asia. Founded by Sir Sidney Kidman, a pioneer of the first Australian frozen beef and mutton exports. Born in South Australia, Sir Sidney Kidman went on to become the greatest pastoral landholder in modern history, earning the nickname of \"The Cattle King\". The present company is a family business owned by his descendants.",
+		"activity": "Developed numerous residential, commercial and industrial real estate projects across China, amounting to 3 million square meters of space. Ranked as one of the top real estate developers in Shanghai. Invested into farming in Santa Cruz, Bolivia (2005), grows soybeans, corns, and sorghum; Acquired majority interest in a copper deposit in Democratic Republic of Congo in 2009. Invested and constructed a number of infrastructure projects in Shanghai (bus terminals, sports centers, and ring roads.). Owns 650 hectares of land on Chongming Island Shanghai and 930 hectares in Shandong Province (devoted to sheep breeding). Owns 29 farms in New Zealand, (local subsidiary - Milk NZ) including the former Crafar dairy farms, and 13 farms previously owned by Synlait Farms."
 	}
+	
 ]

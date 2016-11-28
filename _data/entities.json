@@ -123,6 +123,28 @@
 		"size": "11-50 employees",
 		"overview": "One of Australia's largest beef producers with a herd of 185,000 cattle. Holds pastoral leases covering 103,000 square kilometres. Kidman cattle stations produce grass-fed beef for export to Japan, the USA and South East Asia. Founded by Sir Sidney Kidman, a pioneer of the first Australian frozen beef and mutton exports. Born in South Australia, Sir Sidney Kidman went on to become the greatest pastoral landholder in modern history, earning the nickname of \"The Cattle King\". The present company is a family business owned by his descendants.",
 		"activity": "Developed numerous residential, commercial and industrial real estate projects across China, amounting to 3 million square meters of space. Ranked as one of the top real estate developers in Shanghai. Invested into farming in Santa Cruz, Bolivia (2005), grows soybeans, corns, and sorghum; Acquired majority interest in a copper deposit in Democratic Republic of Congo in 2009. Invested and constructed a number of infrastructure projects in Shanghai (bus terminals, sports centers, and ring roads.). Owns 650 hectares of land on Chongming Island Shanghai and 930 hectares in Shandong Province (devoted to sheep breeding). Owns 29 farms in New Zealand, (local subsidiary - Milk NZ) including the former Crafar dairy farms, and 13 farms previously owned by Synlait Farms."
+	},
+		{
+		"type": "organisation",
+		"status": "Research Organization; Think Tank",
+		"established": "1977",
+		"based": "Beijing, China",
+		"name": "Chinese Academy of Social Sciences (CASS)",
+		"executives": [
+			{
+				"role": "First President",
+				"name": "Hu Qiaomu"
+			},
+			{
+				"role": "Current President",
+				"url": "Wang Weiguang"
+			}
+		],
+		"topics": "--",
+		"size": "3200 employees",
+		"overview": "CASS is the premier academic research organisation and national centre in the People's Republic of China for study in the fields of philosophy and social sciences, with the aim of advancing and innovating scientific research of philosophy, social sciences and policies. Described by Foreign Policy magazine as the top think tank in Asia. It is affiliated with the PRC's State Council.",
+		"activity": " Promotes the development of philosophy and social sciences, which had been almost totally destroyed in the Cultural Revolution. Formed by the separation of 14 research units of the Department of Philosophy and Social Sciences from the Chinese Academy of Sciences.",
+		"other": "China Social Sciences Press was established in June 1978 under the auspices of the Chinese Academy of Social Sciences, and has published over 8,000 books since  inception."
 	}
 	
 ]

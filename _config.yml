@@ -1,0 +1,28 @@
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+# Files and directories to exclude from compilation
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+
+# Extensions to use
+gems:
+  - jekyll-redirect-from
+
+# Sass compilation
+sass:
+  sass_dir: asset/style
+  style: :compressed
+
+# Timezone setting
+timezone: Europe/London

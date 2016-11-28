@@ -2,8 +2,10 @@
 	'use strict';
 
 	// Setup
-	initComponents(document.body, {
-		article: createArticleComponent
+	document.addEventListener('o.DOMContentLoaded', function() {
+		initComponents(document.body, {
+			article: createArticleComponent
+		});
 	});
 
 	// Init all components

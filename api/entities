@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /api/entities.json
+---
+{{site.data.entities | jsonify}}

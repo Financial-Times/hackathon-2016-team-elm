@@ -103,12 +103,21 @@
 			init: function() {
 				component.element = element;
 				component.innerElement = element.querySelector('[data-role=popover-inner]');
+				component.contentElement = element.querySelector('[data-role=popover-content]');
+				component.closeElement = element.querySelector('[data-role=popover-close]');
 				document.addEventListener('ft.teach', component.onTeachEvent);
+				component.closeElement.addEventListener('click', component.onCloseClickEvent);
 			},
 
 			onTeachEvent: function(event) {
 				var entity = event.detail.entity;
-				component.innerElement.innerHTML = templates.entity(event.detail.entity);
+				component.contentElement.innerHTML = templates.entity(event.detail.entity);
+				element.classList.add('teach-popover--open');
+			},
+
+			onCloseClickEvent: function(event) {
+				element.classList.remove('teach-popover--open');
+				event.preventDefault();
 			}
 
 		};

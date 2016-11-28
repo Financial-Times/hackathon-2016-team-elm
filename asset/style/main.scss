@@ -71,6 +71,19 @@ body {
 	padding: 0 10px;
 	margin: 0;
 }
+.teach-popover__close {
+	display: none;
+}
+.teach-popover--open .teach-popover__close {
+	display: inline-block;
+}
 .teach-popover__inner {
+	max-height: 0;
+	overflow: hidden;
+}
+.teach-popover--open .teach-popover__inner {
+	max-height: 80%;
+}
+.teach-popover__content {
 	padding: 10px;
 }

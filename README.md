@@ -10,8 +10,9 @@ Running locally
 
 You'll need [Ruby] and [Bundler] installed for this.
 
-  1. Build and serve the site: `make serve`
-  2. Visit <http://localhost:4000/>
+  1. Install dependencies with `bundle install`
+  2. Build and serve the site: `make serve`
+  3. Visit <http://localhost:4000/>
 
 
 

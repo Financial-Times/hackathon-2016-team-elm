@@ -1,21 +1,25 @@
 ---
 title: 'Hackaton 2016: Team Elm'
-primaryTheme: Test theme
-terms:
-  - Kellyanne Elizabeth Conway
-  - Jill Ellen Stein
-layout: article
 permalink: /
 ---
 
-<p>Nothing to see here&hellip;</p>
+<div data-o-grid-colspan="12 L8 XL7 XLoffset1">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ligula vel enim vehicula, at sollicitudin sem maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget orci suscipit, rhoncus nulla vel, convallis ipsum. Mauris lacinia massa arcu, id posuere nisi malesuada eget. Etiam sed elit et ligula aliquet eleifend in Kellyanne Elizabeth Conway lacinia purus. Ut ac elit felis. Fusce vehicula dolor in orci cursus, a dapibus lorem fermentum. Nunc a lacus scelerisque, fermentum nisi non, mattis dolor. Donec turpis ligula, pretium et volutpat eu, vulputate at odio. Vestibulum fermentum pulvinar purus ac molestie.</p>
+	<div class="article__header">
+		<div class="article__primary-theme">Hackaton 2016</div>
+		<h1 class="article-headline">Team Elm</h1>
+	</div>
 
-<p>Morbi tristique arcu a ligula ullamcorper, vitae pretium lectus dignissim. Curabitur diam sem, dignissim eu lorem sed, sagittis semper metus Jill Ellen Stein. Ut placerat ligula sagittis, maximus justo in, tristique libero. Nunc sodales libero nec sem vehicula, a interdum arcu maximus. Fusce rhoncus metus est, et cursus nisl finibus accumsan. Vestibulum sollicitudin purus vitae quam sollicitudin molestie. Maecenas lobortis orci consectetur libero convallis, sed maximus orci consequat. Donec imperdiet varius nisl a porttitor. Praesent ut convallis ligula. Nullam eu dui ut sem pulvinar ullamcorper.</p>
+	<ul>
+		{% for page in site.pages %}
+			{% if page.layout == 'article' %}
+				<li>
+					<a href="{{page.url | absolute_url}}">
+						{{page.title}}
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
 
-<p>Nunc vitae congue lorem, eget ultrices justo. Praesent id consectetur lacus. Donec maximus non urna nec sagittis. Curabitur augue nisi, dignissim id risus id, tincidunt ultricies nisl. Cras auctor ut lacus eu ultricies. Duis nec leo dolor. Fusce est sem, aliquet vel rhoncus sed, vulputate sed tellus. Fusce id diam non arcu lobortis cursus sit amet nec est. Quisque malesuada mauris sed lectus rhoncus, vitae consectetur quam consequat.</p>
-
-<p>Quisque ornare sit amet tortor quis efficitur. Nulla sagittis tortor feugiat aliquet iaculis. Duis venenatis ultrices ultricies. Morbi in est neque. Suspendisse viverra, justo vitae mollis egestas, odio ligula lobortis elit, at hendrerit dolor purus quis sem. Sed cursus odio rhoncus elit semper, nec semper neque porta. Fusce eget justo vel odio lobortis tincidunt.</p>
-
-<p>Mauris sed quam quis elit eleifend viverra non non metus. Integer sit amet placerat enim. Etiam et sem ut arcu scelerisque varius non at magna. Sed non lacus eu magna ultricies accumsan. Duis eget pharetra enim, et laoreet elit. Vivamus ut arcu eu diam vulputate vestibulum. Maecenas felis nulla, pellentesque quis mi in, pharetra consectetur lectus.</p>
+</div>

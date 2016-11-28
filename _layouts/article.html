@@ -2,7 +2,12 @@
 layout: page
 ---
 
-<div class="article" data-o-grid-colspan="12 L8 XL7 XLoffset1">
+<div class="article" data-o-grid-colspan="12 L8 XL7 XLoffset1" data-component="article">
+
+	<meta name="entities-url" content="{{"/api/entities.json" | absolute_url}}"/>
+	{% for term in page.terms %}
+		<meta name="article-term" content="{{term}}"/>
+	{% endfor %}
 
 	<div class="article__header">
 		<div class="article__primary-theme">{{page.primaryTheme}}</div>

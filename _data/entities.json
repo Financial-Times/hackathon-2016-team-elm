@@ -83,6 +83,28 @@
 		"net_worth": "$1.42 billion"
 	},
 	{
+		"type": "person",
+		"age": "48",
+		"education": "Honours degree in Applied Economic Geography (University of New South Wales). Higher School Certificate (Sydney Boys High School).",
+		"name": "Scott John Morrison",
+		"news": [
+			{
+				"title": "Australia flags China’s debt mountain as risk to stability",
+				"url": "https://www.ft.com/content/8475afbe-9cc2-11e6-8324-be63473ce146"
+			},
+			{
+				"title": "Australia tightens scrutiny over infrastructure sales",
+				"url": "https://www.ft.com/content/5d764ab8-ecb9-11e5-9fca-fb0f946fd1f0"
+			}
+		],
+		"topics": "--",
+		"previous": "Minister for Social Services (late 2014); Minister for Immigration and Border Protection, responsible for implementing Operation Sovereign Borders, aimed at preventing people smuggling. Liberal Party member of the Australian House of Representatives (representing the Division of Cook, 2007). Managing director of Tourism Australia and NSW State Director of the Liberal Party of Australia from 2000 to 2004.",
+		"recent": "Treasurer for Australia (Liberal Party) appointed by the Turnbull Government in September 2015.",
+		"net_worth": "--",
+		"other": "n November 2014, the Australian Human Rights Commission delivered a report to Government which found that Morrison failed in his responsibility to act in the best interests of children in detention during his time as Minister.",
+		"party": "Australian Liberal Party"
+	},
+	{
 		"type": "organisation",
 		"status": "Private Company",
 		"established": "1997",

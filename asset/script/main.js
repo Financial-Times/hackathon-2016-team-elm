@@ -2,10 +2,13 @@
 	'use strict';
 
 	// Setup
+	var templates;
 	document.addEventListener('o.DOMContentLoaded', function() {
 		initComponents(document.body, {
-			article: createArticleComponent
+			article: createArticleComponent,
+			popover: createPopoverComponent
 		});
+		templates = initTemplates(document.body);
 	});
 
 	// Init all components
@@ -18,11 +21,23 @@
 		});
 	}
 
+	// Init all templates
+	function initTemplates(rootElement) {
+		var templates = {};
+		find('script[type="text/x-handlebars"]', rootElement).forEach(function(templateElement) {
+			var templateName = templateElement.getAttribute('name');
+			var templateSource = templateElement.innerHTML;
+			templates[templateName] = Handlebars.compile(templateSource);
+		});
+		return templates;
+	}
+
 	// Create an article
 	function createArticleComponent(element) {
 		var component = {
 
 			init: function() {
+				component.element = element;
 				component.entities = component.loadEntities(component.findTerms());
 				component.paragraphs = component.findParagraphs();
 				component.createEntityLinks();
@@ -62,15 +77,11 @@
 					component.paragraphs.forEach(function(paragraph) {
 						// Find entities within the paragraph
 						entities.forEach(function(entity) {
-							paragraph.innerHTML = paragraph.innerHTML.replace(entity.name, [
-								'<a ',
-									'href="#', slugify(entity.name) , '" ',
-									'data-component="entity-link"',
-									'data-entity-json="', JSON.stringify(entity).replace(/"/g, '&quot;') , '"',
-								'>',
-									entity.name,
-								'</a>'
-							].join(''));
+							var render = templates['entity-link']({
+								entity: entity,
+								json: JSON.stringify(entity)
+							});
+							paragraph.innerHTML = paragraph.innerHTML.replace(entity.name, render);
 						});
 						// Initialise components for the new entities
 						initComponents(paragraph, {
@@ -85,24 +96,47 @@
 		return component;
 	}
 
+	// Create a popover component
+	function createPopoverComponent(element) {
+		var component = {
+
+			init: function() {
+				component.element = element;
+				component.innerElement = element.querySelector('[data-role=popover-inner]');
+				document.addEventListener('ft.teach', component.onTeachEvent);
+			},
+
+			onTeachEvent: function(event) {
+				var entity = event.detail.entity;
+				component.innerElement.innerHTML = templates.entity(event.detail.entity);
+			}
+
+		};
+		component.init();
+		return component;
+	}
+
 	// Create an entity link
 	function createEntityLinkComponent(element) {
 		var component = {
 
 			init: function() {
+				component.element = element;
 				component.entity = component.getEntityData();
 				component.bindEvents();
 			},
 
 			bindEvents: function() {
-				element.addEventListener('click', component.onClick);
+				element.addEventListener('click', component.onClickEvent);
 			},
 
-			onClick: function(event) {
-				alert(
-					'Work in progress! Here\'s the data for this entity:\n' +
-					JSON.stringify(component.entity, null, 4)
-				);
+			onClickEvent: function(event) {
+				var teachEvent = new CustomEvent('ft.teach', {
+					detail: {
+						entity: component.entity
+					}
+				});
+				document.dispatchEvent(teachEvent);
 				event.preventDefault();
 			},
 
@@ -124,6 +158,13 @@
 	// Slugify a string
 	function slugify(string) {
 		return string.trim().toLowerCase().replace(/[^a-z0-9\-]+/i, '-');
+	}
+
+	// Create an element from HTML
+	function createElement(html) {
+		var outer = document.createElement('div');
+		outer.innerHTML = html;
+		return outer.firstChild;
 	}
 
 }());

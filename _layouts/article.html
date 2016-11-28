@@ -16,4 +16,27 @@ layout: page
 
 	{{content}}
 
+	<div class="teach-popover o--if-js" data-component="popover">
+		<div class="teach-popover__header">
+			<h3 class="teach-popover__heading">TEACH</h3>
+		</div>
+		<div class="teach-popover__inner" data-role="popover-inner">
+			&hellip;
+		</div>
+	</div>
+
+	<script name="entity-link" type="text/x-handlebars">
+		{% raw %}
+			<a href="#{{entity.name}}" data-component="entity-link" data-entity-json="{{json}}">{{entity.name}}</a>
+		{% endraw %}
+	</script>
+
+	<script name="entity" type="text/x-handlebars">
+		{% raw %}
+			<h4>{{name}}</h4>
+			<p>{{education}}</p>
+			<p>etc etc</p>
+		{% endraw %}
+	</script>
+
 </div>

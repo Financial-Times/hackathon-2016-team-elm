@@ -47,7 +47,30 @@ body {
 .article {
 	font: 18px/1.4 Georgia,serif;
 	margin-bottom: 40px;
+	position: relative;
 }
 .article p {
 	margin: .3em 0 .8em 0;
+}
+
+// Teach popover
+.teach-popover {
+	width: 250px;
+	background: #fff;
+	bottom: 0;
+	position: fixed;
+	right: 100px;
+}
+.teach-popover__header {
+	background: #275e86;
+	padding: 10px;
+}
+.teach-popover__heading {
+	font-size: 20px;
+	color: #fff;
+	padding: 0 10px;
+	margin: 0;
+}
+.teach-popover__inner {
+	padding: 10px;
 }

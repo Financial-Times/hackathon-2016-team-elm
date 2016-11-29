@@ -41,6 +41,12 @@ body {
 	line-height: 31px;
 	margin: 0;
 }
+
+// Article image
+.article-image {
+	width: 100%;
+}
+
 @media (min-width: 61.25em) {
 	.article-headline {
 		font-size: 40px;
@@ -121,7 +127,7 @@ body {
 	.teach-popover__content-info {
 		padding: 20px;
 	    max-height: 400px;
-    	overflow-y: scroll;
+    	overflow-y: auto;
     	h5 {
     		font-weight: 600;
     		margin: 0;
@@ -135,7 +141,7 @@ body {
     			padding-right: 10px;
     		}
     	}
-    	.recent-news {
+    	.links {
     		li {
     			padding-bottom: 15px;
     			&:last-child {

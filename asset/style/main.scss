@@ -7,6 +7,11 @@ body {
 	background-color: #fff1e0;
 }
 
+// Box sizing to all
+* { 
+	Box-sizing: Border-box 
+} 
+
 // Article styles (mostly copied from next)
 // ========================================
 
@@ -55,24 +60,28 @@ body {
 
 // Teach popover
 .teach-popover {
-	width: 250px;
+	width: 300px;
 	background: #fff;
 	bottom: 0;
 	position: fixed;
 	right: 100px;
+	font-family: MetricWeb, sans-serif;
 }
 .teach-popover__header {
 	background: #275e86;
-	padding: 10px;
 }
 .teach-popover__heading {
-	font-size: 20px;
-	padding: 0 10px;
+	font-size: 18px;
 	margin: 0;
-
-	&, a {
-		color: #fff;
+	a {
+		width: 100%;
+		font-size: 18px;
+		color: #ffffff;
 		text-decoration: none;
+		display: block;
+		padding: 15px 20px;
+		text-transform: uppercase;
+		font-weight: 600;
 	}
 }
 .teach-popover__close {
@@ -80,6 +89,9 @@ body {
 }
 .teach-popover--open .teach-popover__close {
 	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .teach-popover__inner {
 	max-height: 0;
@@ -89,5 +101,58 @@ body {
 	max-height: 80%;
 }
 .teach-popover__content {
-	padding: 10px;
+	.teach-popover__content-title {
+		margin: 0;
+		font-weight: 600;
+	}
+
+	//popover info 
+	.teach-popover__content-info {
+		padding: 20px;
+	}
+
+	//popover checklist
+	.teach-popover__content-checklist {
+		padding: 5px 20px 20px;
+		background: #275e86;
+		color: #ffffff;
+		.article-title {
+			color: #ffffff;
+			font-family: FinancierWeb;
+			font-weight: 400;
+			font-size: 23px;
+			line-height: 27px;
+			margin: 0;
+			border-bottom: 1px solid #93AEC2;
+			padding-bottom: 20px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				font-weight: 300;
+				margin: 10px 0;
+				a {
+					color: #fff;
+					border-bottom: 1px dotted #93AEC2;
+					text-decoration: none;
+					padding-bottom: 7px;
+				}
+				.check {
+					float: right;
+					width: 20px;
+					margin-top: 5px;
+				}
+			}
+		}
+		.reading-summary {
+			margin: 0;
+			border-top: 1px solid #93AEC2;
+			padding-top: 20px;
+			font-weight: 300;
+			.bold {
+				font-weight: 900;
+			}
+		}
+	}
 }

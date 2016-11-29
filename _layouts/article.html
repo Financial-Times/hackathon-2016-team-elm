@@ -19,7 +19,7 @@ layout: page
 	<div class="teach-popover o--if-js" data-component="popover">
 		<div class="teach-popover__header">
 			<h3 class="teach-popover__heading">
-				<a href="#" data-role="popover-open">Teach</a>
+				<a href="#" data-role="popover-open"><!--<i class="o-icons-icon o-icons-icon--book">--></i>Teach with ft</a>
 				<button class="teach-popover__close" data-role="popover-close">close</button>
 			</h3>
 		</div>
@@ -38,11 +38,12 @@ layout: page
 
 	<script name="entity" type="text/x-handlebars">
 		{% raw %}
+		<div class="teach-popover__content-info">
 			{{#switch type}}
 				{{#case "person"}}
 
 					<!-- Person -->
-					<h4>{{name}}</h4>
+					<h4 class="teach-popover__content-title">{{name}}</h4>
 					<p>{{education}}</p>
 					<dl>
 						{{#if born}}
@@ -105,22 +106,27 @@ layout: page
 					{{/each}}
 				</ul>
 			{{/if}}
-
+		</div>
 		{% endraw %}
 	</script>
 
 	<script name="entity-checklist" type="text/x-handlebars">
 		{% raw %}
-			<ul>
-				{{#entities}}
-					<li>
-						{{name}}
-						{{#checked}}
-							✔
-						{{/checked}}
-					</li>
-				{{/entities}}
-			</ul>
+			<div class="teach-popover__content-checklist">
+				<h3 class="article-title">This is the title of the current article</h3>
+				<ul>
+					{{#entities}}
+						<li>
+							
+							<a href="#" data-component="entity-link" data-entity-json="{{json}}">{{name}}</a>
+							{{#checked}}
+								<img class="check" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon%3Atick?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="tick">
+							{{/checked}}
+						</li>
+					{{/entities}}
+				</ul>
+				<p class="reading-summary">You have read <span class="bold">X</span> out of <span class="bold">X</span> Think with FT hints on this article</p>
+			</div>
 		{% endraw %}
 	</script>
 

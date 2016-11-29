@@ -65,7 +65,7 @@ layout: page
 				{{#case "organisation"}}
 
 					<!-- Organisation -->
-					<h4>{{name}}</h4>
+					<h4 class="teach-popover__content-title">{{name}}</h4>
 					<p>{{based}}</p>
 					<ul>
 						<li>
@@ -77,8 +77,8 @@ layout: page
 					</ul>
 
 					{{#if executives}}
-						<h5>Executives</h5>
-						<ul>
+						<h5>Executives:</h5>
+						<ul class="links">
 							{{#each executives}}
 								<li>
 									<a href="#">{{role}}: {{name}}</a>
@@ -92,7 +92,7 @@ layout: page
 
 			{{#if news}}
 				<h5>Recent News:</h5>
-				<ul class="recent-news">
+				<ul class="links">
 					{{#each news}}
 						<li>
 							<a href="{{url}}">{{title}}</a>

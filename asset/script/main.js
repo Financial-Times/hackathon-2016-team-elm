@@ -6,7 +6,8 @@
 	document.addEventListener('o.DOMContentLoaded', function() {
 		initComponents(document.body, {
 			article: createArticleComponent,
-			popover: createPopoverComponent
+			popover: createPopoverComponent,
+			helper: createHelperComponent
 		});
 		templates = initTemplates(document.body);
 		registerHandlebarsHelpers(Handlebars);
@@ -230,6 +231,28 @@
 
 			getEntityData: function() {
 				return JSON.parse(element.getAttribute('data-entity-json'));
+			}
+
+		};
+		component.init();
+		return component;
+	}
+
+	// Create a helper thingy
+	function createHelperComponent(element) {
+		var component = {
+
+			init: function() {
+				component.element = element;
+				component.closeElement = find('[data-role=helper-close]', element);
+				component.closeElement.forEach(function(close) {
+					close.addEventListener('click', component.onCloseClickEvent);
+				});
+			},
+
+			onCloseClickEvent: function(event) {
+				element.remove();
+				event.preventDefault();
 			}
 
 		};

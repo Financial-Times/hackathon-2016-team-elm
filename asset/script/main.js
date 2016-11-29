@@ -158,7 +158,6 @@
 			},
 
 			onChecklistEvent: function(event) {
-				console.log(component.entities)
 				component.contentElement.innerHTML = templates['entity-checklist']({
 					entities: component.entities
 				});

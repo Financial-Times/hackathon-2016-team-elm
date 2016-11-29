@@ -117,7 +117,7 @@
 			},
 			{
 				"role": "President",
-				"url": "Lei Jiang"
+				"name": "Lei Jiang"
 			}
 		],
 		"topics": [],
@@ -138,7 +138,7 @@
 			},
 			{
 				"role": "Managing Director",
-				"url": "Greg Campbell"
+				"name": "Greg Campbell"
 			}
 		],
 		"topics": [],
@@ -159,7 +159,7 @@
 			},
 			{
 				"role": "Current President",
-				"url": "Wang Weiguang"
+				"name": "Wang Weiguang"
 			}
 		],
 		"topics": [],

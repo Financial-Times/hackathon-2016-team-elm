@@ -111,13 +111,13 @@ layout: page
 	</script>
 
 	<script name="entity-checklist" type="text/x-handlebars">
-		{% raw %}
-			<div class="teach-popover__content-checklist">
-				<h3 class="article-title">This is the title of the current article</h3>
+		<div class="teach-popover__content-checklist">
+			<h3 class="article-title">{{page.title}}</h3>
+			{% raw %}
 				<ul>
 					{{#entities}}
 						<li>
-							
+
 							<a href="#" data-component="entity-link" data-entity-json="{{json}}">{{name}}</a>
 							{{#checked}}
 								<img class="check" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon%3Atick?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="tick">
@@ -125,9 +125,9 @@ layout: page
 						</li>
 					{{/entities}}
 				</ul>
-				<p class="reading-summary">You have read <span class="bold">X</span> out of <span class="bold">X</span> Think with FT hints on this article</p>
-			</div>
-		{% endraw %}
+				<p class="reading-summary">You have read <span class="bold">{{read}}</span> out of <span class="bold">{{total}}</span> Think with FT hints on this article</p>
+			{% endraw %}
+		</div>
 	</script>
 
 </div>

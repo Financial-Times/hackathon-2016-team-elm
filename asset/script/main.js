@@ -159,6 +159,8 @@
 
 			onChecklistEvent: function(event) {
 				component.contentElement.innerHTML = templates['entity-checklist']({
+					read: component.entities.filter(function(entity) { return entity.checked; }).length,
+					total: component.entities.length,
 					entities: component.entities
 				});
 				element.classList.add('teach-popover--open');

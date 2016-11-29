@@ -158,10 +158,6 @@ body {
     	ul {
     		list-style: none;
     		padding: 0;
-    		.info-tile {
-    			font-weight: 600;
-    			padding-right: 10px;
-    		}
     	}
     	.links {
     		li {
@@ -233,4 +229,8 @@ body {
 			}
 		}
 	}
+}
+.info-tile {
+	font-weight: 600;
+	padding-right: 10px;
 }

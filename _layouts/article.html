@@ -45,7 +45,6 @@ layout: page
 
 					<!-- Person -->
 					<h4 class="teach-popover__content-title">{{name}}</h4>
-					<p>{{education}}</p>
 					<ul>
 						{{#if born}}
 							<li>
@@ -62,20 +61,34 @@ layout: page
 							</li>
 					</ul>
 
+					<p><span class="info-tile">Recent:</span>{{recent}}</p>
+					<p><span class="info-tile">Previous:</span>{{previous}}</p>
+					<p><span class="info-tile">Education:</span>{{education}}</p>
+					<p>{{other}}</p>
+
 				{{/case}}
 				{{#case "organisation"}}
 
 					<!-- Organisation -->
 					<h4 class="teach-popover__content-title">{{name}}</h4>
-					<p>{{based}}</p>
 					<ul>
 						<li>
+							<span class="info-tile">Status:</span>{{status}}
+						</li>
+						<li>
 							<span class="info-tile">Established:</span>{{established}}
+						</li>
+						<li>
+							<span class="info-tile">Based:</span>{{based}}
 						</li>
 						<li>
 							<span class="info-tile">Size:</span>{{size}}
 						</li>
 					</ul>
+
+					<p>{{overview}}</p>
+
+					<p>{{activity}}</p>
 
 					{{#if executives}}
 						<h5>Executives:</h5>

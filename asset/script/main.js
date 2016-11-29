@@ -144,13 +144,21 @@
 				component.openElement.addEventListener('click', component.onChecklistEvent);
 			},
 
+			open: function() {
+				element.classList.add('teach-popover--open');
+			},
+
+			close: function() {
+				element.classList.remove('teach-popover--open');
+			},
+
 			openChecklist: function() {
 				component.contentElement.innerHTML = templates['entity-checklist']({
 					read: component.entities.filter(function(entity) { return entity.checked; }).length,
 					total: component.entities.length,
 					entities: component.entities
 				});
-				element.classList.add('teach-popover--open');
+				component.open();
 			},
 
 			onTeachEvent: function(event) {
@@ -174,7 +182,7 @@
 			},
 
 			onCloseClickEvent: function(event) {
-				element.classList.remove('teach-popover--open');
+				component.close();
 				event.preventDefault();
 			},
 

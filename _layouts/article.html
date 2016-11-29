@@ -19,8 +19,8 @@ layout: page
 	<div class="teach-popover o--if-js" data-component="popover">
 		<div class="teach-popover__header">
 			<h3 class="teach-popover__heading">
-				<a href="#" data-role="popover-open"><!--<i class="o-icons-icon o-icons-icon--book">--></i>Teach with ft</a>
-				<button class="teach-popover__close" data-role="popover-close">close</button>
+				<a href="#" data-role="popover-open"><img class="book" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Abook?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="book">Think with ft</a>
+				<button class="teach-popover__close" data-role="popover-close"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Across?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="close"></button>
 			</h3>
 		</div>
 		<div class="teach-popover__inner" data-role="popover-inner">
@@ -45,18 +45,21 @@ layout: page
 					<!-- Person -->
 					<h4 class="teach-popover__content-title">{{name}}</h4>
 					<p>{{education}}</p>
-					<dl>
+					<ul>
 						{{#if born}}
-							<dt>Born</dt>
-							<dd>{{born}}</dd>
+							<li>
+								<span class="info-tile">Born:</span>{{born}}
+							</li>	
 						{{/if}}
 						{{#if age}}
-							<dt>Age</dt>
-							<dd>{{age}}</dd>
+							<li>
+								<span class="info-tile">Age:</span>{{age}}
+							</li>	
 						{{/if}}
-						<dt>Net Worth</dt>
-						<dd>{{net_worth}}</dd>
-					</dl>
+							<li>
+								<span class="info-tile">Net Worth:</span>{{net_worth}}
+							</li>
+					</ul>
 
 				{{/case}}
 				{{#case "organisation"}}
@@ -64,12 +67,14 @@ layout: page
 					<!-- Organisation -->
 					<h4>{{name}}</h4>
 					<p>{{based}}</p>
-					<dl>
-						<dt>Established</dt>
-						<dd>{{established}}</dd>
-						<dt>Size</dt>
-						<dd>{{size}}</dd>
-					</dl>
+					<ul>
+						<li>
+							<span class="info-tile">Established:</span>{{established}}
+						</li>
+						<li>
+							<span class="info-tile">Size:</span>{{size}}
+						</li>		
+					</ul>
 
 					{{#if executives}}
 						<h5>Executives</h5>
@@ -86,8 +91,8 @@ layout: page
 			{{/switch}}
 
 			{{#if news}}
-				<h5>Recent News</h5>
-				<ul>
+				<h5>Recent News:</h5>
+				<ul class="recent-news">
 					{{#each news}}
 						<li>
 							<a href="{{url}}">{{title}}</a>
@@ -97,11 +102,11 @@ layout: page
 			{{/if}}
 
 			{{#if topics}}
-				<h5>Related topics</h5>
-				<ul>
+				<h5>Related topics:</h5>
+				<ul class="related-topics">
 					{{#each topics}}
 						<li>
-							<a href="#">{{.}}</a>
+							<button class="o-buttons" href="#">{{.}}</a>
 						</li>
 					{{/each}}
 				</ul>
@@ -120,7 +125,7 @@ layout: page
 
 							<a href="#" data-component="entity-link" data-entity-json="{{json}}">{{name}}</a>
 							{{#checked}}
-								<img class="check" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon%3Atick?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="tick">
+								<img class="check" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Atick?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="tick">
 							{{/checked}}
 						</li>
 					{{/entities}}

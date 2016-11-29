@@ -64,7 +64,7 @@ body {
 	background: #fff;
 	bottom: 0;
 	position: fixed;
-	right: 100px;
+	right: 75px;
 	font-family: MetricWeb, sans-serif;
 }
 .teach-popover__header {
@@ -79,9 +79,15 @@ body {
 		color: #ffffff;
 		text-decoration: none;
 		display: block;
-		padding: 15px 20px;
+		padding: 15px 20px 15px 45px;
 		text-transform: uppercase;
 		font-weight: 600;
+		.book {
+			width: 30px;
+			position: absolute;
+			top: 12px;
+			left: 12px;
+		}
 	}
 }
 .teach-popover__close {
@@ -90,8 +96,13 @@ body {
 .teach-popover--open .teach-popover__close {
 	display: inline-block;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 12px;
+	right: 15px;
+	border: none;
+	background: transparent;
+	img {
+		width: 25px;
+	}
 }
 .teach-popover__inner {
 	max-height: 0;
@@ -109,6 +120,46 @@ body {
 	//popover info 
 	.teach-popover__content-info {
 		padding: 20px;
+	    max-height: 400px;
+    	overflow-y: scroll;
+    	h5 {
+    		font-weight: 600;
+    		margin: 0;
+    		font-size: 18px;
+    	}
+    	ul {
+    		list-style: none;
+    		padding: 0;
+    		.info-tile {
+    			font-weight: 600;
+    			padding-right: 10px;
+    		}
+    	}
+    	.recent-news {
+    		li {
+    			padding-bottom: 15px;
+    			&:last-child {
+    				padding-bottom: 0;
+    			}
+    			a {
+	    			text-decoration: none;
+	    			padding-bottom: 3px;
+	    			font-family: FinancierWeb, serif;
+    			    color: #26747a;
+    				border-bottom: 1px dotted #26747a;
+    				&:hover {
+					    color: #505050;
+    					border-bottom-color: transparent;
+    				}
+    			}
+    		}
+    	}
+    	.related-topics {
+    		li {
+    			float: left;
+    			padding: 0 5px 5px 0;
+    		}
+    	}
 	}
 
 	//popover checklist
@@ -140,8 +191,7 @@ body {
 				}
 				.check {
 					float: right;
-					width: 20px;
-					margin-top: 5px;
+					width: 35px;
 				}
 			}
 		}

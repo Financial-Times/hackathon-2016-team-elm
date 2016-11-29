@@ -67,9 +67,13 @@ body {
 }
 .teach-popover__heading {
 	font-size: 20px;
-	color: #fff;
 	padding: 0 10px;
 	margin: 0;
+
+	&, a {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 .teach-popover__close {
 	display: none;

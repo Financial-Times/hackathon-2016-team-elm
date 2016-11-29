@@ -74,6 +74,14 @@
 
 			createEntityLinks: function() {
 				component.entities.then(function(entities) {
+					entities.forEach(function(entity) {
+						var entityEvent = new CustomEvent('ft.entity', {
+							detail: {
+								entity: entity
+							}
+						});
+						document.dispatchEvent(entityEvent);
+					});
 					component.paragraphs.forEach(function(paragraph) {
 						// Find entities within the paragraph
 						entities.forEach(function(entity) {
@@ -86,7 +94,7 @@
 						// Initialise components for the new entities
 						initComponents(paragraph, {
 							'entity-link': createEntityLinkComponent
-						})
+						});
 					});
 				});
 			}
@@ -104,14 +112,36 @@
 				component.element = element;
 				component.innerElement = element.querySelector('[data-role=popover-inner]');
 				component.contentElement = element.querySelector('[data-role=popover-content]');
+				component.openElement = element.querySelector('[data-role=popover-open]');
 				component.closeElement = element.querySelector('[data-role=popover-close]');
+				component.entities = [];
 				document.addEventListener('ft.teach', component.onTeachEvent);
+				document.addEventListener('ft.entity', component.onEntityEvent);
+				document.addEventListener('ft.checklist', component.onChecklistEvent);
 				component.closeElement.addEventListener('click', component.onCloseClickEvent);
+				component.openElement.addEventListener('click', component.onChecklistEvent);
 			},
 
 			onTeachEvent: function(event) {
 				var entity = event.detail.entity;
+				component.entities.forEach(function(ent) {
+					if (ent.name === entity.name) {
+						ent.checked = true;
+					}
+				});
 				component.contentElement.innerHTML = templates.entity(event.detail.entity);
+				element.classList.add('teach-popover--open');
+			},
+
+			onEntityEvent: function(event) {
+				component.entities.push(event.detail.entity);
+			},
+
+			onChecklistEvent: function(event) {
+				console.log(component.entities)
+				component.contentElement.innerHTML = templates['entity-checklist']({
+					entities: component.entities
+				});
 				element.classList.add('teach-popover--open');
 			},
 

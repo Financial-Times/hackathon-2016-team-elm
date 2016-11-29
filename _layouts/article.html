@@ -19,7 +19,7 @@ layout: page
 	<div class="teach-popover o--if-js" data-component="popover">
 		<div class="teach-popover__header">
 			<h3 class="teach-popover__heading">
-				Teach
+				<a href="#" data-role="popover-open">Teach</a>
 				<button class="teach-popover__close" data-role="popover-close">close</button>
 			</h3>
 		</div>
@@ -41,6 +41,21 @@ layout: page
 			<h4>{{name}}</h4>
 			<p>{{education}}</p>
 			<p>etc etc</p>
+		{% endraw %}
+	</script>
+
+	<script name="entity-checklist" type="text/x-handlebars">
+		{% raw %}
+			<ul>
+				{{#entities}}
+					<li>
+						{{name}}
+						{{#checked}}
+							✔
+						{{/checked}}
+					</li>
+				{{/entities}}
+			</ul>
 		{% endraw %}
 	</script>
 

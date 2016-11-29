@@ -54,13 +54,6 @@ body {
 	}
 }
 
-//Teach helper
-.teach-helper {
-	background-color: #275e86;
-	font-family: MetricWeb, sans-serif;
-	padding: 20px 0;
-}
-
 // Typography
 .article {
 	font: 18px/1.4 Georgia,serif;
@@ -96,12 +89,12 @@ body {
 		display: block;
 		padding: 15px 20px 15px 45px;
 		color: #ffffff;
-		.book {
-			width: 30px;
-			position: absolute;
-			top: 12px;
-			left: 12px;
-		}
+	}
+	.book {
+		width: 30px;
+		position: absolute;
+		top: 12px;
+		left: 12px;
 	}
 }
 .entity-link {
@@ -121,7 +114,8 @@ body {
 .teach-popover__close {
 	display: none;
 }
-.teach-popover--open .teach-popover__close {
+.teach-popover--open .teach-popover__close,
+.teach-helper__close {
 	display: inline-block;
 	position: absolute;
 	top: 12px;
@@ -233,4 +227,33 @@ body {
 .info-tile {
 	font-weight: 600;
 	padding-right: 10px;
+}
+
+//Teach helper
+.teach-helper {
+	background-color: #275e86;
+	font-family: MetricWeb, sans-serif;
+	padding: 0 0 20px 0;
+	color: rgba(255, 255, 255, .8);
+}
+.teach-helper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.teach-helper li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.teach-helper a {
+	color: rgba(255, 255, 255, .8);
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(255, 255, 255, .8);
+}
+.teach-helper .book {
+	width: 30px;
+	position: relative;
+	top: 10px;
+	left: 0;
+	margin-right: 3px;
 }

@@ -50,14 +50,15 @@
 
 	{% include header.html %}
 
+	{% if page.layout == 'article' %}
 	<div class="teach-helper">
 		<div class="o-grid-container">
 			<div class="o-grid-row ">
 				<div class="teach-helper-inner" data-o-grid-colspan="10 XLoffset1" data-component="article">
 					<button class="teach-helper__close" data-role="helper-close"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Across?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="close"></button>
-					<h4 class="teach-popover__heading">Think with FT</h4>
+					<h4 class="teach-popover__heading"><img class="book" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Abook?source=hackathon&width=10&height=10&tint=%23ffffff%2C%23ffffff" alt="book">Think with FT</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id tortor id mi elementum suscipit. Phasellus metus ipsum, sodales semper maximus eget, rhoncus et justo. Cras mattis urna sed leo venenatis malesuada. Donec malesuada mattis erat, in tincidunt nunc laoreet vel. Cras a suscipit turpis. Morbi vitae sagittis leo. Sed cursus facilisis consequat.
+						Think with FT helps you quickly and easily tincidunt nunc laoreet vel. Cras a suscipit turpis. Morbi vitae sagittis leo. Sed cursus facilisis consequat.
 					</p>
 					<ul>
 						<li><a href="#">Disable Think With FT today</a></li>
@@ -67,6 +68,7 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
 
 	<div class="o-grid-container">
 		<div class="o-grid-row">

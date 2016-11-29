@@ -27,7 +27,7 @@
 		var templates = {};
 		find('script[type="text/x-handlebars"]', rootElement).forEach(function(templateElement) {
 			var templateName = templateElement.getAttribute('name');
-			var templateSource = templateElement.innerHTML;
+			var templateSource = templateElement.innerHTML.trim();
 			templates[templateName] = Handlebars.compile(templateSource);
 		});
 		return templates;

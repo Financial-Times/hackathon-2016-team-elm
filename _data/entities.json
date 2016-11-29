@@ -105,6 +105,27 @@
 		"party": "Australian Liberal Party"
 	},
 	{
+		"type": "person",
+		"born": "1947",
+		"education": "BA at Brigham Young University (1971). Joint JD–MBA at Harvard University (1975).",
+		"name": "Mitt Romney",
+		"news": [
+			{
+				"title": "Trump meets Romney as aides fight over appointment",
+				"url": "https://www.ft.com/content/08ceb104-b594-11e6-ba85-95d1533d9a62"
+			},
+			{
+				"title": "Republicans at odds over prospect of Romney as secretary of state",
+				"url": "https://www.ft.com/content/71190d36-b2e7-11e6-a37c-f4a01f1b0fa1"
+			}
+		],
+		"topics": ["US election 2016", "Trump", "Republican Party"],
+		"previous": "Elected Governor of Massachusetts in 2002. President and CEO of the Salt Lake Organizing Committee for the 2002 Winter Olympics. Ran as the Republican candidate in 1994 Massachusetts election for U.S. Senate. Join Bain & Company, a management consulting, in 1977, becoming vice-president in 1978. Co-founded spin-off company Bain Capital (private equity investment) in 1984.",
+		"recent": "Announced on January 30, 2015 that he would not run for president in 2016. Outspoken critic of Donald Trump’s candidacy for president, nevertheless met with President-elect Trump on November 19 reportedly to discuss position of Secretary of State. Republican Party's nominee for President of the United States in the 2012 election. Defeated by Democratic President Barack Obama, losing by 332–206 electoral college votes. Served as Governor of Massachusetts from 2003 to 2007.",
+		"net_worth": "Between $190 and $250 million.",
+		"other": "Leader in the Mormon church (Church of Jesus Christ of Latter-Day Saints), taking on a major role in 1977. Acting as stake president, overseeing about a dozen congregations with close to 4,000 members."
+	},
+	{
 		"type": "organisation",
 		"status": "Private Company",
 		"established": "1997",

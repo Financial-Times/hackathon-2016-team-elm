@@ -108,7 +108,8 @@
 								entity: entity,
 								json: JSON.stringify(entity)
 							});
-							paragraph.innerHTML = paragraph.innerHTML.replace(entity.name, render);
+							var entityName = entity.name.replace('&', '&amp;');
+							paragraph.innerHTML = paragraph.innerHTML.replace(entityName, render);
 						});
 						// Initialise components for the new entities
 						initComponents(paragraph, {

@@ -8,9 +8,9 @@ body {
 }
 
 // Box sizing to all
-* { 
-	Box-sizing: Border-box 
-} 
+* {
+	box-sizing: border-box;
+}
 
 // Article styles (mostly copied from next)
 // ========================================
@@ -104,6 +104,20 @@ body {
 		}
 	}
 }
+.entity-link {
+	text-decoration: none;
+	color: #275e86;
+}
+.entity-link:hover {
+	border-bottom: 1px dotted #275e86;
+}
+.link-book {
+	width: 25px;
+	margin-bottom: -1px;
+	margin-left: -5px;
+	display: inline-block;
+	vertical-align: bottom;
+}
 .teach-popover__close {
 	display: none;
 }
@@ -131,7 +145,7 @@ body {
 		font-weight: 600;
 	}
 
-	//popover info 
+	//popover info
 	.teach-popover__content-info {
 		padding: 20px;
 	    max-height: 400px;

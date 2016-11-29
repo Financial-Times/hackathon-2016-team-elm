@@ -32,7 +32,8 @@ layout: page
 
 	<script name="entity-link" type="text/x-handlebars">
 		{% raw %}
-			<a href="#{{entity.name}}" data-component="entity-link" data-entity-json="{{json}}">{{entity.name}}</a>
+			<a href="#{{entity.name}}" data-component="entity-link" data-entity-json="{{json}}" class="entity-link">{{entity.name}}
+			<img class="link-book" src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Abook?source=hackathon&width=10&height=10&tint=275e86" alt="book"></a>
 		{% endraw %}
 	</script>
 
@@ -49,12 +50,12 @@ layout: page
 						{{#if born}}
 							<li>
 								<span class="info-tile">Born:</span>{{born}}
-							</li>	
+							</li>
 						{{/if}}
 						{{#if age}}
 							<li>
 								<span class="info-tile">Age:</span>{{age}}
-							</li>	
+							</li>
 						{{/if}}
 							<li>
 								<span class="info-tile">Net Worth:</span>{{net_worth}}
@@ -73,7 +74,7 @@ layout: page
 						</li>
 						<li>
 							<span class="info-tile">Size:</span>{{size}}
-						</li>		
+						</li>
 					</ul>
 
 					{{#if executives}}
@@ -111,6 +112,7 @@ layout: page
 					{{/each}}
 				</ul>
 			{{/if}}
+
 		</div>
 		{% endraw %}
 	</script>

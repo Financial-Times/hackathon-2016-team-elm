@@ -9,6 +9,7 @@
 			popover: createPopoverComponent
 		});
 		templates = initTemplates(document.body);
+		registerHandlebarsHelpers(Handlebars);
 	});
 
 	// Init all components
@@ -30,6 +31,24 @@
 			templates[templateName] = Handlebars.compile(templateSource);
 		});
 		return templates;
+	}
+
+	// Register Handlebars helpers
+	function registerHandlebarsHelpers(hbs) {
+
+		Handlebars.registerHelper('switch', function(value, options) {
+			this._switch_value_ = value;
+			var html = options.fn(this);
+			delete this._switch_value_;
+			return html;
+		});
+
+		Handlebars.registerHelper('case', function(value, options) {
+			if (value == this._switch_value_) {
+				return options.fn(this);
+			}
+		});
+
 	}
 
 	// Create an article

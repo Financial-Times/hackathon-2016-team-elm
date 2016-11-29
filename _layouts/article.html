@@ -38,9 +38,24 @@ layout: page
 
 	<script name="entity" type="text/x-handlebars">
 		{% raw %}
-			<h4>{{name}}</h4>
-			<p>{{education}}</p>
-			<p>etc etc</p>
+			{{#switch type}}
+				{{#case "person"}}
+
+					<!-- Person -->
+					<h4>{{name}}</h4>
+					<p>{{education}}</p>
+					<p>etc etc</p>
+
+				{{/case}}
+				{{#case "organisation"}}
+
+					<!-- Organisation -->
+					<h4>{{name}}</h4>
+					<p>{{based}}</p>
+					<p>etc etc</p>
+
+				{{/case}}
+			{{/switch}}
 		{% endraw %}
 	</script>
 

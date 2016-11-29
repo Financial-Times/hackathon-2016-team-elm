@@ -158,6 +158,9 @@
 					total: component.entities.length,
 					entities: component.entities
 				});
+				initComponents(component.contentElement, {
+					'entity-link': createEntityLinkComponent
+				});
 				component.open();
 			},
 
@@ -173,7 +176,9 @@
 			},
 
 			onEntityEvent: function(event) {
-				component.entities.push(event.detail.entity);
+				var entity = event.detail.entity;
+				entity.json = JSON.stringify(entity);
+				component.entities.push(entity);
 			},
 
 			onChecklistEvent: function(event) {

@@ -135,11 +135,22 @@
 				component.openElement = element.querySelector('[data-role=popover-open]');
 				component.closeElement = element.querySelector('[data-role=popover-close]');
 				component.entities = [];
+				component.previousScrollPosition = 0;
+				document.addEventListener('scroll', component.onScrollEvent);
 				document.addEventListener('ft.teach', component.onTeachEvent);
 				document.addEventListener('ft.entity', component.onEntityEvent);
 				document.addEventListener('ft.checklist', component.onChecklistEvent);
 				component.closeElement.addEventListener('click', component.onCloseClickEvent);
 				component.openElement.addEventListener('click', component.onChecklistEvent);
+			},
+
+			openChecklist: function() {
+				component.contentElement.innerHTML = templates['entity-checklist']({
+					read: component.entities.filter(function(entity) { return entity.checked; }).length,
+					total: component.entities.length,
+					entities: component.entities
+				});
+				element.classList.add('teach-popover--open');
 			},
 
 			onTeachEvent: function(event) {
@@ -158,18 +169,21 @@
 			},
 
 			onChecklistEvent: function(event) {
-				component.contentElement.innerHTML = templates['entity-checklist']({
-					read: component.entities.filter(function(entity) { return entity.checked; }).length,
-					total: component.entities.length,
-					entities: component.entities
-				});
-				element.classList.add('teach-popover--open');
+				component.openChecklist();
 				event.preventDefault();
 			},
 
 			onCloseClickEvent: function(event) {
 				element.classList.remove('teach-popover--open');
 				event.preventDefault();
+			},
+
+			onScrollEvent: function(event) {
+				var scrollBottom = document.body.scrollTop + document.documentElement.clientHeight;
+				if (scrollBottom > document.body.offsetHeight - 100 && component.previousScrollPosition < scrollBottom) {
+					component.openChecklist();
+				}
+				component.previousScrollPosition = scrollBottom;
 			}
 
 		};

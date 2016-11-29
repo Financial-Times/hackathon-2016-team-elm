@@ -164,6 +164,7 @@
 					entities: component.entities
 				});
 				element.classList.add('teach-popover--open');
+				event.preventDefault();
 			},
 
 			onCloseClickEvent: function(event) {
